@@ -6,3 +6,74 @@
   font-weight:400;
   font-style: normal;
 }
+/* shared styles -----------------------*/
+.display-flex{
+  display: flex;
+}
+.orng-btn{
+    font-size:1.25rem;
+    font-weight: 600;
+    border-radius: 8px;
+    padding: 20px 25px;
+    color: white;
+    background: rgb(255, 144, 14);
+    border: none;
+    justify-content: center;
+    margin-top: 32px;
+    margin-bottom: 50px;
+}
+
+/* _______________________________1ST PART_____________________________________ */
+/* header style----------------------- */
+header{
+  background-color: rgba(255, 144, 14, 0.1); ;
+}
+/* nav style------------------------ */
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+}
+.brand-name{
+  font-size: 3rem;
+  font-weight: 700;
+}
+.navbar ul li{
+  list-style: none;
+  margin-right: 30px;
+}
+.nav-link{
+  text-decoration: none;
+  font-weight: 500;
+  color: #424242;
+}
+.navbar,.banner{
+  max-width: 1440px;
+  margin: 0 auto;
+  /* border: 2px solid black; */
+}
+/* banner style--------------------- */
+.banner-content{
+  max-width: 850px;
+  margin: 0 auto;
+  text-align: center;
+  /* border: 2px solid red; */
+}
+.banner .banner-title{ 
+  font-size: 4rem;
+  font-weight: 700;
+}
+.banner .banner-description{
+  font-size: 1rem;
+  font-weight: 400;
+}
+.banner .banner-pic{
+  margin-bottom: 25px;
+  width: 100%;
+}
+/* ------------------Responsive header---------------  */
+/* For small device */
+@media screen and (max-width:576px){
+  .navbar{
+    flex-direction: column;
+  }
+}
