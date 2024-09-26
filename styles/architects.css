@@ -7,6 +7,10 @@
   font-style: normal;
 }
 /* shared styles -----------------------*/
+main{
+  max-width: 1440px;
+  margin: 0 auto;
+}
 .display-flex{
   display: flex;
 }
@@ -75,5 +79,59 @@ header{
 @media screen and (max-width:576px){
   .navbar{
     flex-direction: column;
+  }
+}
+
+/* _________________________________2ND PART____________________________________ */
+/* teams style-------------------- */
+.teams{
+  margin-top: 85px;
+  align-items: center;
+}
+.teams-img{
+  display: grid;
+  grid-template-columns: repeat(2 , 1fr);
+  gap: 24px;
+}
+.our-features{
+  margin-left: 73px;
+  max-width: 530px;
+}
+.our-features .features-title{
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+.our-features .features-title #part-1{
+  font-weight: 500;
+  color: rgb(114, 114, 114);
+}
+.our-features .features-title #part-3{
+  color: rgb(255, 144, 14);
+}
+.features-description{
+  color: rgb(114, 114, 114);
+  margin-top: 20px;
+  margin-bottom:20px;
+}
+/* ------------------Responsive teams-------------------- */
+/* For Small device */
+@media screen and (max-width:576px) {
+  .teams{
+    flex-direction: column;
+  }
+  .teams-img{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .our-features{
+    margin-left: 20px;
+  } 
+}
+/* For medium device */
+@media screen and (min-width:577px) and (max-width:992px) {
+  .teams{
+    flex-direction: column;
+  }
+  .our-features{
+    margin:50px auto ;
   }
 }
