@@ -189,3 +189,49 @@ header{
     gap: 24px;
   }
 }
+/* For medium device */
+@media screen  and (min-width:577px) and (max-width:992px){
+  .some-facts-container{
+    grid-template-columns: repeat(2, 1fr);
+    gap:50px;
+    justify-items: center;
+  }
+}
+
+/*___________________________________5TH PART_____________________________________ */
+/* our sponsors style----------------------- */
+.sponsors-info{
+  max-width: 540px;
+  margin: 50px auto;
+  text-align: center;
+}
+.sponsors-description{
+  color: rgb(114, 114, 114);
+  font-size: 16px;
+  font-weight: 400;
+}
+.sponsors-companies{
+  display: grid;
+  grid-template-columns: repeat(5 ,1fr);
+}
+.sponsors-companies img{
+  filter: grayscale(100%);
+  border: 1px dashed gray;
+}
+/* --------------Responsive sponsors--------------- */
+/* For small device */
+@media screen and (max-width:576px)  {
+  .sponsors-companies{
+    grid-template-columns: 1fr;
+    gap: 50px;
+    justify-items: center;
+  }
+}
+/* For medium device */
+@media screen and (min-width:577px) and (max-width:992px) {
+  .sponsors-companies{
+    grid-template-columns: repeat(2, 1fr);
+    gap:50px;
+    justify-items: center;
+  } 
+}
