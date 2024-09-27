@@ -26,6 +26,10 @@ main{
     margin-top: 32px;
     margin-bottom: 50px;
 }
+.section-title{
+  font-size: 2.8rem;
+  font-weight: 700;
+}
 
 /* _______________________________1ST PART_____________________________________ */
 /* header style----------------------- */
@@ -97,15 +101,11 @@ header{
   margin-left: 73px;
   max-width: 530px;
 }
-.our-features .features-title{
-  font-size: 2.8rem;
-  font-weight: 700;
-}
-.our-features .features-title #part-1{
+.our-features .section-title #part-1{
   font-weight: 500;
   color: rgb(114, 114, 114);
 }
-.our-features .features-title #part-3{
+.our-features .section-title #part-3{
   color: rgb(255, 144, 14);
 }
 .features-description{
@@ -133,5 +133,59 @@ header{
   }
   .our-features{
     margin:50px auto ;
+  }
+}
+
+/* ___________________________________3RD PART_______________________________ */
+/*  */
+
+
+
+
+
+
+
+
+/* ____________________________________4TH PART_____________________________________ */
+/* Some facts styles---------------- */
+.facts-description{
+  margin-bottom:80px;
+  max-width: 540px;
+  color: rgb(114, 114, 114);
+  Font weight: 400;
+  Font size: 16px;
+}
+.some-facts-container{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.fact-card{
+  border: 1px solid rgb(255, 144, 14);
+  border-radius: 8px;
+  width: 240px;
+  height: 240px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.fact-number{
+  font-size: 2.8rem;
+  font-weight: 600;
+  margin-top: 5px;
+  margin-bottom: 10px;
+}
+.fact-name{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-top: 10px;
+  color: rgb(114, 114, 114);
+}
+/* --------------------Responsive Facts------------------------- */
+/* For small device */
+@media screen and (max-width:576px) {
+  .some-facts-container{
+    grid-template-columns: 1fr;
+    justify-items: center;
+    gap: 24px;
   }
 }
