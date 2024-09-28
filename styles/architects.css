@@ -137,14 +137,78 @@ header{
 }
 
 /* ___________________________________3RD PART_______________________________ */
-/*  */
-
-
-
-
-
-
-
+/*Features style------------------  */
+.features{
+  display: flex;
+  margin-top: 130px;
+  gap: 140px;
+}
+#features-title{
+  border-left: 5px solid rgb(255, 144, 14);
+  padding-left: 20px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+.features-description{
+  color: rgb(114, 114, 114);
+  font-size: 16px;
+  font-weight: 400;
+}
+.features-card{
+  padding: 30px;
+  box-shadow: 0 4px 30px 0 rgba(0, 0, 0, 0.06);
+  margin-bottom: 20px;
+  border-radius: 8px;
+}
+.card-title{
+  color: rgb(19, 19, 19);
+  font-size:1.25rem;
+  font-weight: 600;
+}
+.card-description{
+  color: rgb(114, 114, 114);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+  margin-top: 5px;
+}
+#experience-badge{
+  padding: 45px 42px;
+  font-size: 1.5rem;
+  font-weight: 500;
+  margin-top: -100px;
+  margin-left: -100px;
+}
+#experience-year{
+  font-size: 4rem;
+  font-weight: 700;
+}
+/*/* ------------------Responsive features-------------------- */
+/* For small device */
+@media screen and (max-width:576px) {
+  .features{
+    flex-direction: column;
+  }
+  .features-architect img {
+    width: 100%;
+  }
+  #experience-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
+@media screen and (min-width:577px) and (max-width:992px){
+  .features{
+    flex-direction: column;
+  }
+  .features-architect img {
+    width: 100%;
+  }
+  #experience-badge{
+    margin-top: 20px;
+    margin-left: 20px;
+  }
+}
 
 /* ____________________________________4TH PART_____________________________________ */
 /* Some facts styles---------------- */
@@ -152,8 +216,8 @@ header{
   margin-bottom:80px;
   max-width: 540px;
   color: rgb(114, 114, 114);
-  Font weight: 400;
-  Font size: 16px;
+  font-weight: 400;
+  font-size: 16px;
 }
 .some-facts-container{
   display: grid;
@@ -200,6 +264,10 @@ header{
 
 /*___________________________________5TH PART_____________________________________ */
 /* our sponsors style----------------------- */
+.our-sponsors{
+  margin-top:180px ;
+  margin-bottom:130px ;
+}
 .sponsors-info{
   max-width: 540px;
   margin: 50px auto;
@@ -233,5 +301,33 @@ header{
     grid-template-columns: repeat(2, 1fr);
     gap:50px;
     justify-items: center;
+  } 
+}
+
+/* __________________________________6TH PART______________________________ */
+/* Footer style */
+.footer{
+  border-radius: 8px;
+  background: rgb(255, 244, 231);
+}
+.footer-description{
+  color: rgb(66, 66, 66);
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
+  padding: 39px 410px;
+  
+}
+/* -----------------------Responsive footer---------------------------- */
+/* For small device */
+@media screen and (max-width:576px) {
+  .footer-description{
+    padding: 10px;
+  } 
+}
+/* For medium device */
+@media screen and (min-width:577px) and (max-width:992px){
+  .footer-description{
+    padding: 20px;
   } 
 }
